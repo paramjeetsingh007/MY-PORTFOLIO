@@ -18,10 +18,11 @@ function Hero() {
       <div className="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* LEFT COLUMN: Content & Text */}
         <div className="lg:col-span-6 flex flex-col justify-center">
-          {/* Available Badge */}
-          <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/5 max-w-fit mb-8">
-            <span className="h-2 w-2 rounded-full bg-[#39ff14] shadow-[0_0_10px_#39ff14] animate-pulse" />
-            <span className="font-mono text-[10px] tracking-[3px] text-[#39ff14] uppercase font-bold">
+          
+          {/* ✨ FIXED AVAILABLE BADGE FOR IPHONE ✨ */}
+          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 max-w-fit mb-8 whitespace-nowrap mt-5">
+            <span className="h-2 w-2 flex-shrink-0 rounded-full bg-[#39ff14] shadow-[0_0_10px_#39ff14] animate-pulse" />
+            <span className="font-mono text-[10px] sm:text-xs tracking-[2px] text-[#39ff14] uppercase font-bold pr-1">
               Available For Work
             </span>
           </div>
@@ -51,7 +52,6 @@ function Hero() {
                 "Problem Solver",
               ]}
             />
-            {/* <span className="animate-blink">|</span> */}
           </div>
 
           {/* Description */}
@@ -100,18 +100,13 @@ function Hero() {
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Profile Image & Tech Ring Visuals (Sized Up to 6 Cols) */}
+        {/* RIGHT COLUMN: Profile Image & Tech Ring Visuals */}
         <div className="lg:col-span-6 flex justify-center items-center relative mt-10 lg:mt-0">
-          {/* Main Glowing Tech Backdrop Circle - Sized up to 440px */}
           <div className="relative w-80 h-80 md:w-[440px] md:h-[440px] rounded-full flex items-center justify-center">
-            {/* Outer Radial Aura */}
             <div className="absolute inset-0 rounded-full bg-[#39ff14]/10 blur-3xl animate-pulse" />
-
-            {/* Fine Circular Border Overlay */}
             <div className="absolute inset-0 rounded-full border border-[#39ff14]/20 scale-105 pointer-events-none" />
             <div className="absolute inset-4 rounded-full border border-dashed border-zinc-800 pointer-events-none" />
 
-            {/* Profile Picture Container */}
             <div className="w-[85%] h-[85%] rounded-full overflow-hidden border-2 border-[#39ff14]/30 bg-zinc-900 relative z-10">
               <img
                 src={paramImg}
@@ -121,38 +116,24 @@ function Hero() {
             </div>
 
             {/* FLOATING TECH BADGES */}
-            {/* React Badge (Top Left) - Animation Removed */}
-            <div className="absolute -top-4 left-4 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:border-cyan-400/50 transition-all group">
+            <div className="absolute -top-4 left-4 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)]">
               <div className="text-cyan-400 text-xl font-bold">⚛</div>
-              <span className="text-[10px] font-mono text-zinc-400 group-hover:text-cyan-400">
-                React.js
-              </span>
+              <span className="text-[10px] font-mono text-zinc-400">React.js</span>
             </div>
 
-            {/* Node.js Badge (Top Right) */}
-            <div className="absolute top-10 -right-6 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:border-green-500/50 transition-all group">
+            <div className="absolute top-10 -right-6 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)]">
               <div className="text-green-500 text-xl font-bold">⬢</div>
-              <span className="text-[10px] font-mono text-zinc-400 group-hover:text-green-500">
-                Node.js
-              </span>
+              <span className="text-[10px] font-mono text-zinc-400">Node.js</span>
             </div>
 
-            {/* Express.js Badge (Moved to Mid Left) */}
-            <div className="absolute bottom-20 -left-8 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:border-white/50 transition-all group">
-              <div className="text-white text-sm font-black tracking-tighter">
-                ex
-              </div>
-              <span className="text-[10px] font-mono text-zinc-400 group-hover:text-white">
-                Express.js
-              </span>
+            <div className="absolute bottom-20 -left-8 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+              <div className="text-white text-sm font-black tracking-tighter">ex</div>
+              <span className="text-[10px] font-mono text-zinc-400">Express.js</span>
             </div>
 
-            {/* MongoDB Badge (Moved to Bottom Right) */}
-            <div className="absolute bottom-6 right-0 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:border-emerald-500/50 transition-all group">
+            <div className="absolute bottom-6 right-0 z-20 flex flex-col items-center gap-1 p-3 rounded-xl border border-zinc-800 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)]">
               <div className="text-emerald-500 text-xl font-bold">🍃</div>
-              <span className="text-[10px] font-mono text-zinc-400 group-hover:text-emerald-500">
-                MongoDB
-              </span>
+              <span className="text-[10px] font-mono text-zinc-400">MongoDB</span>
             </div>
           </div>
         </div>

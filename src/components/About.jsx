@@ -65,7 +65,7 @@ function About() {
           </div>
 
           {/* Terminal Card */}
-          <div className="bg-[#0d0d0d] border border-zinc-800 rounded-2xl overflow-hidden shadow-xl">
+        <div className="bg-[#0d0d0d] border border-zinc-800 rounded-2xl overflow-hidden shadow-xl">
             <div className="bg-[#161616] px-4 py-3 flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-red-500"></span>
               <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
@@ -97,21 +97,21 @@ function About() {
               <br />
               <span className="ml-4 text-[#39ff14]">"experience"</span>
               <span className="text-gray-500">:</span>
-              <span className="text-orange-300">
-                {" "}
-                "Internship + Industry Experience"
-              </span>
+             <span className="text-orange-300">
+  {" "}
+  "1+ Year Professional Experience"
+</span>
               ,
               <br />
               <span className="ml-4 text-[#39ff14]">"projects"</span>
               <span className="text-gray-500">:</span>
-              <span className="text-white"> "Multiple GitHub Projects"</span>,
+              <span className="text-white"> "Multiple Client & GitHub Projects"</span>,
               <br />
               <span className="ml-4 text-[#39ff14]">"available"</span>
               <span className="text-gray-500">:</span>
               <span className="text-[#39ff14]"> true</span>,
               <br />
-              <span className="ml-4 text-[#39ff14]">"Tea"</span>
+              <span className="ml-4 text-[#39ff14]">"coffee_or_tea"</span>
               <span className="text-gray-500">:</span>
               <span className="text-orange-300"> "always"</span>
               <br />
