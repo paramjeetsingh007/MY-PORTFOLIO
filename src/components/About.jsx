@@ -51,9 +51,16 @@ function About() {
                 Hire Me
               </button>
 
-              <button className="border border-[#39ff14] text-[#39ff14] px-6 py-3 rounded-xl hover:bg-[#39ff14] hover:text-black transition">
+              {/* DOWNLOAD CV BUTTON */}
+              <a
+                href="/Resume.pdf" // Public folder me rakhi aapki file ka name yahan aayega
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Paramjeet_Singh_Resume.pdf"
+                className="border border-[#39ff14] text-[#39ff14] font-semibold px-6 py-3 rounded-xl hover:bg-[#39ff14] hover:text-black hover:scale-105 transition duration-300 text-center inline-block"
+              >
                 Download CV
-              </button>
+              </a>
             </div>
           </div>
 
