@@ -53,7 +53,7 @@ function About() {
 
               {/* DOWNLOAD CV BUTTON */}
               <a
-                href="/resume.pdf"
+                href="/Resume.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Paramjeet_Singh_Resume.pdf"

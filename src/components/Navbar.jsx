@@ -37,7 +37,7 @@ export default function Navbar({
         {/* Desktop CV Button */}
         <div className="hidden md:block">
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer" // Security ke liye best practice
             download="Paramjeet_Singh_Resume.pdf" 
@@ -61,34 +61,38 @@ export default function Navbar({
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-[#111] border-t border-zinc-800 px-6 py-4">
-          <div className="flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
-              <button
-                key={link}
-                onClick={() => {
-                  scrollTo(link);
-                  setMenuOpen(false);
-                }}
-                className={`text-left transition ${
-                  activeSection === link ? "text-[#39ff14]" : "text-gray-400"
-                }`}
-              >
-                {link}
-              </button>
-            ))}
+     {/* Mobile Menu */}
+{menuOpen && (
+  <div className="md:hidden bg-[#111] border-t border-zinc-800 px-6 py-4">
+    <div className="flex flex-col gap-4">
+      {NAV_LINKS.map((link) => (
+        <button
+          key={link}
+          onClick={() => {
+            scrollTo(link);
+            setMenuOpen(false);
+          }}
+          className={`text-left transition ${
+            activeSection === link ? "text-[#39ff14]" : "text-gray-400"
+          }`}
+        >
+          {link}
+        </button>
+      ))}
 
-            <a
-              href="/resume.pdf"
-              download
-              className="mt-3 bg-[#39ff14] text-black px-5 py-3 rounded-lg text-center font-medium"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
-      )}
+      {/* FIXED MOBILE DOWNLOAD BUTTON */}
+      <a
+        href="/Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download="Paramjeet_Singh_Resume.pdf"
+        className="mt-3 bg-[#39ff14] text-black px-5 py-3 rounded-lg text-center font-medium"
+      >
+        Download CV
+      </a>
+    </div>
+  </div>
+)}
     </nav>
   );
 }
