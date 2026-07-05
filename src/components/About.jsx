@@ -53,7 +53,7 @@ function About() {
 
               {/* DOWNLOAD CV BUTTON */}
               <a
-                href="/Resume.pdf" // Public folder me rakhi aapki file ka name yahan aayega
+                href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Paramjeet_Singh_Resume.pdf"

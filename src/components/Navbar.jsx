@@ -37,10 +37,10 @@ export default function Navbar({
         {/* Desktop CV Button */}
         <div className="hidden md:block">
           <a
-            href="/Resume.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer" // Security ke liye best practice
-            download="Paramjeet_Singh_Resume.pdf" // Isse automatic DOWNLOAD trigger hoga (aap custom file name bhi de sakte hain)
+            download="Paramjeet_Singh_Resume.pdf" 
             className="bg-[#39ff14] text-black px-5 py-2 rounded-lg font-medium hover:scale-105 transition inline-block text-center"
           >
             Download CV
